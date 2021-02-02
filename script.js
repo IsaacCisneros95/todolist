@@ -13,7 +13,7 @@ function createListElement() {
 	newli.appendChild(document.createTextNode(input.value));
 	var newbutton = document.createElement("button");
 	newbutton.appendChild(document.createTextNode("Delete"));
-	newbutton.classList.add("delete");
+	newbutton.classList.add("delete", "btn", "btn-danger");
 	newli.appendChild(newbutton);
 	newbutton.addEventListener("click", function() {
 		newbutton.parentElement.remove();
